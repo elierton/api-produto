@@ -43,7 +43,8 @@ app.get("/health", (res, req) => {
 });
 
 app.put(
-  "/stress/{elemento}/tempostress/{tempoStress}/intervalo/{intervalo}/ciclos/{ciclos}",
+  "/stress/:elemento/tempostress/:tempoStress/intervalo/:intervalo/ciclos/:ciclos",
+
   (req, res) => {
     const elemento = req.params.elemento;
     const tempoStress = req.params.tempoStress * 1000;
