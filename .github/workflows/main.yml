@@ -72,7 +72,8 @@ jobs:
       - name: Deploy WebApi
         uses: Azure/k8s-deploy@v1.3
         with: 
-          images: eliertondockerid/api-bootcamp-produto:v1
+        #Minha imagem foi mantida na versão v1, pois da 2 em diante sempre obvite erro nos pods
+          images: eliertondockerid/api-bootcamp-produto:v1 
           manifests: | 
             k8s/api/deployment.yaml
              
