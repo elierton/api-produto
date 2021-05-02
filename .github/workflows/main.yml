@@ -73,7 +73,7 @@ jobs:
         uses: Azure/k8s-deploy@v1.3
         with: 
         #Minha imagem foi mantida na versão v1, pois da 2 em diante sempre obvite erro nos pods
-          images: eliertondockerid/api-bootcamp-produto:v1 
+          images: eliertondockerid/api-bootcamp-produto:v${{GITHUB.RUN_NUMBER}} 
           manifests: | 
             k8s/api/deployment.yaml
              
