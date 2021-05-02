@@ -29,9 +29,9 @@ jobs:
         uses: docker/login-action@v1.9.0
         with:
           # Username used to log against the Docker registry
-          username: ${{secrets.DOCKERHUB_USER}}
+          username: ${{SECRETS.DOCKERHUB_USER}}
           # Password or personal access token used to log against the Docker registry
-          password: ${{secrets.DOCKERHUB_PWD}}
+          password: ${{SECRETS.DOCKERHUB_PWD}}
        
 
       - name: Build and push Docker images
@@ -46,5 +46,5 @@ jobs:
           push: true
           tags: |
             eliertondockerid/api-bootcamp-produto:latest
-            eliertondockerid/api-bootcamp-produto:v${{github.run_number}}
+            eliertondockerid/api-bootcamp-produto:v${{GITHUB.RUN_NUMBER}}
      
