@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: eliertondockerid/api-bootcamp-produto:v1
+          image: eliertondockerid/api-bootcamp-produto
           ports:
             - containerPort: 8080
           env:
