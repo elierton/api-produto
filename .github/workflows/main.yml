@@ -34,6 +34,6 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: 
-            eliertondockerid/api-bootcamp-produto:latest
+            eliertondockerid/api-bootcamp-produto:v1
             eliertondockerid/api-bootcamp-produto:${{github.run_number}}
      
