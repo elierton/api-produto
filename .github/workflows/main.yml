@@ -46,5 +46,5 @@ jobs:
           push: true
           tags: |
             eliertondockerid/api-bootcamp-produto:latest
-            eliertondockerid/api-bootcamp-produto:${{github.run_number}}
+            eliertondockerid/api-bootcamp-produto:v${{github.run_number}}
      
