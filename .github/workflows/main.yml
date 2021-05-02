@@ -33,7 +33,7 @@ jobs:
           # Path to the Dockerfile
           file: ./src/Dockerfile
           push: true
-          tags: 
-            eliertondockerid/api-bootcamp-produto:v1
+          tags: |
+            eliertondockerid/api-bootcamp-produto:latest
             eliertondockerid/api-bootcamp-produto:${{github.run_number}}
      
